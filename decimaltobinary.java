@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class decimaltobinary{    
+public class DecimalToBinary{    
     public static void toBinary(int decimal){ 
 
          int binary[] = new int[40];    
@@ -11,7 +11,7 @@ public class decimaltobinary{
            decimal = decimal/2;    
          } 
 
-         for(int i = index-1;i >= 0;i--){    
+         for(int i=index-1; i>= 0; i--){    
            System.out.print(binary[i]);    
          } 
          
@@ -21,7 +21,7 @@ public class decimaltobinary{
     
 
     public static void main(String args[]){      
-      Scanner scanner = new Scanner(System.in);
-      int num = scanner.nextInt();
+      Scanner sc = new Scanner(System.in);
+      int num = sc.nextInt();
       toBinary(num);     
     }}      
